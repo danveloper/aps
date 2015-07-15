@@ -1,0 +1,25 @@
+buildscript {
+  repositories {
+    maven { url "https://jitpack.io" }
+    jcenter()
+  }
+
+  dependencies {
+    classpath 'io.ratpack:ratpack-gradle:0.9.18'
+    classpath 'com.github.danveloper:ratpack-asset-pipeline:4920680'
+    classpath "com.craigburke.angular:angular-annotate-asset-pipeline:2.1.0"
+  }
+}
+
+apply plugin: 'idea'
+apply plugin: 'io.ratpack.ratpack-groovy'
+
+repositories {
+  maven { url "https://jitpack.io" }
+  jcenter()
+}
+
+dependencies {
+  compile 'com.github.danveloper:ratpack-asset-pipeline:4920680'
+  compile "com.craigburke.angular:angular-annotate-asset-pipeline:2.1.0"
+}
